@@ -189,8 +189,9 @@ var marquee = (function(){
 	return {
 		init:function(){
 			drawLed();
+			bindEvents();
 
-			//初始化显示
+			//show from get params
 			var params = u.getReqParams();
 			var msg = params.msg,
 				bgColor = params.bg_color,
@@ -211,4 +212,4 @@ var marquee = (function(){
 		}
 	}
 	
-})();	
+});	
