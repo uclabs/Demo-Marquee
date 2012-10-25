@@ -197,7 +197,7 @@ var marquee = (function(){
 				bgColor = params.bg_color,
 				wColor = params.w_color;
 			if(!msg){
-				msg = "UC LABS";
+				msg = "UC Labs";
 			}
 			if(bgColor){
 				led.setOffColor(bgColor);
