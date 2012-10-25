@@ -196,19 +196,20 @@ var marquee = (function(){
 			var msg = params.msg,
 				bgColor = params.bg_color,
 				wColor = params.w_color;
-			if(msg){
-				if(bgColor){
-					led.setOffColor(bgColor);
-				}
-				if(wColor){
-					led.setOnColor(wColor);
-				}
-				led.showBlank();
-				led.writeMessage(msg);
-				led.clearAni();
-				led.resetPos();
-				led.scrollMsg(msg);
+			if(!msg){
+				msg = "UC LABS";
 			}
+			if(bgColor){
+				led.setOffColor(bgColor);
+			}
+			if(wColor){
+				led.setOnColor(wColor);
+			}
+			led.showBlank();
+			led.writeMessage(msg);
+			led.clearAni();
+			led.resetPos();
+			led.scrollMsg(msg);
 		}
 	}
 	
